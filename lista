@@ -1,0 +1,41 @@
+# Criar listas faixas com 4 valores zerados
+faixas = [0, 0, 0, 0] 
+# Definir quantidade_lida como 0 
+lidos = 0
+# Enquanto quantidade_lida for menor que 20
+while lidos < 20:
+# Escreva 
+    n = int(input("Digite um numero positivo(ou negativo para parar): "))
+ # Se n <0, entao 
+    if n < 0:
+  # Parar
+        break 
+#Se numero entre 0 e 25, então
+    if 0 <= n <=25:
+        faixas[0] += 1 
+# Senão numero entre 26 e 50, então
+    if 26 <= n <=50:
+        faixas[1] += 1
+# Senão numero entre 51 e 75, então
+    if 51 <= n <=75:
+        faixas[2] += 1
+# Senão numero entre 76 e 100, então  
+    if 76 <= n <=100:
+        faixas[3] += 1
+  
+lidos += 1
+
+print(f"[0-25]: {faixas[0]}")
+print(f"[26-50]: {faixas[1]}")
+print(f"[51-75]: {faixas[2]}")
+print(f"[76-100]: {faixas[3]}")
+
+a = 0 
+b = 1
+
+if a == 0:
+    print(a)
+elif a > 0:
+    print(a)
+else:
+    print(b) 
